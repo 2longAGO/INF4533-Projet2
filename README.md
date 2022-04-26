@@ -21,20 +21,17 @@
 
 
 ## Spécification fonctionnelle
-Notre projet doit, idéalement, être capable de livrer certains services, comme demandé dans l’énoncé du projet 2.  Cette première partie de la documentation présentera d’abord toutes les fonctionnalités que nous désirions implémenter dans notre système, puis il sera discuté de quelles fonctionnalités nous avons réussi à implémenter et pourquoi nous n’avons pas réussi à implémenter certaines fonctionnalités, si certaines fonctionnalités ne sont pas implémentées. 
-
+Cette section liste les services que notre projet est capable de livrer.
 ### Fonctions du système
-Dans la liste à point ci-dessous sont énumérées les différentes fonctionnalités que nous désirions implémenter dans le système (**F** correspond à fonctionnalités dans la liste). Les fonctionnalités ne sont pas dans un ordre précis. 
+Dans la liste à point ci-dessous sont énumérées les différentes fonctionnalités implémentées dans le système. Les fonctionnalités ne sont pas dans un ordre précis. 
 
-1. Envoyer des messages à des contacts fictifs en choisissant à quel contact l’envoyer et en entrant manuellement dans une zone de texte le message à envoyer
-2. Pouvoir accéder à tous les messages envoyés aux contacts fictifs
-3. Créer de nouveau contacts fictifs en spécifiant son nom et sa clé publique
-4. Pouvoir modifier le nom et la clé publique d’un contact après avoir créé celui-ci
-5. Pouvoir choisir quelle est la clé publique de l’utilisateur
-6. Pouvoir chercher à travers les la banque de contacts enregistrés avec une recherche basé sur du texte (par exemple, si dans la recherche « ma » est entré, les contacts comme Marco et Emma devraient sortir).
-7. Le client web doit être une Single Page Application.
-8. Le mini-serveur doit pouvoir recevoir des messages en se synchronisant avec un pairs, une instance du même serveur sur une autre machine.
-9. Les messages doivent être cryptés de manière asymétrique grâce aux clés publiques et privées des utilisateurs.
+1. Envoyer des messages à des contacts en choisissant à quel contact l’envoyer et en entrant manuellement dans une zone de texte le message à envoyer
+2. Créer de nouveau contacts en spécifiant son nom et sa clé publique
+3. Pouvoir modifier le nom et la clé publique d’un contact après avoir créé celui-ci
+4. Pouvoir chercher à travers la banque de contacts enregistrés avec une recherche basé sur du texte (par exemple, si dans la recherche « ma » est entré, les contacts comme Marco et Emma devraient sortir).
+5. Le client web doit être une Single Page Application.
+6. Le mini-serveur doit pouvoir recevoir des messages en se synchronisant avec un pairs, une instance du même serveur sur une autre machine.
+7. Les messages doivent être encryptés de manière asymétrique grâce aux clés publiques et privées des utilisateurs.
 
 ### Présentation des fonctions implémentées
 
@@ -67,7 +64,7 @@ Ce fichier à comme tâche principale de créer et gérer le serveur du système
 <ins>*/addLetters*</ins> : ajoute un message crypté au document letters.json avec la clé du destinataire.
 
 ### Architecture du fichier client.js
-Ce fichier est extrêmement important parce qu’il contient toutes les fonctions pour gérer la page clients en plus de plusieurs fonctions pour permettre de communiquer et interagir avec le serveur. une des tâches principales de ce fichier est de gérer tout ce qui a attrait aux contacts. Ce fichier contient toutes les fonctions pour ajouter, supprimer et modifier un contact en plus d’afficher tous les contacts. Ce fichier gère aussi tout ce qui est lié aux messages en permettant d’envoyer des messages et d’afficher les messages reçus. De plus, ce fichier permet d’encrypter les messages envoyés et de décrypter les messages reçus. Finalement, permet de faire une recherche dans respectivement la banque de messages reçus et dans la banque de contacts.
+Ce fichier contient toutes les fonctions pour gérer la page clients en plus de plusieurs fonctions pour permettre de communiquer et interagir avec le serveur. Une des tâches principales de ce fichier est de gérer tout ce qui a attrait aux contacts. Ce fichier contient toutes les fonctions pour ajouter, supprimer et modifier un contact en plus d’afficher tous les contacts. Ce fichier gère aussi tout ce qui est lié aux messages en permettant d’envoyer des messages et d’afficher les messages reçus. De plus, ce fichier permet d’encrypter les messages envoyés et de décrypter les messages reçus. Finalement, permet de faire une recherche dans respectivement la banque de messages reçus et dans la banque de contacts.
 
 ### Architecture du fichier index.html
 Ce fichier gère tout l’aspect visuel du système. C’est via ce fichier qu’on peut afficher visuellement les tableaux des messages et des contacts, qu’on peut avoir des boutons qu’il possible de cliquer, que l’on peut se déplacer entre les sections "Accueil", ”Carnet d’adresse” et ”Messages” et que l’on peut avoir des zones d’entrée de texte.
