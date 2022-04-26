@@ -25,13 +25,14 @@ Cette section liste les services que notre projet est capable de livrer.
 ### Fonctions du système
 Dans la liste à point ci-dessous sont énumérées les différentes fonctionnalités implémentées dans le système. Les fonctionnalités ne sont pas dans un ordre précis. 
 
-1. Envoyer des messages à des contacts en choisissant à quel contact l’envoyer et en entrant manuellement dans une zone de texte le message à envoyer
-2. Créer de nouveau contacts en spécifiant son nom et sa clé publique
-3. Pouvoir modifier le nom et la clé publique d’un contact après avoir créé celui-ci
-4. Pouvoir chercher à travers la banque de contacts enregistrés avec une recherche basé sur du texte (par exemple, si dans la recherche « ma » est entré, les contacts comme Marco et Emma devraient sortir).
-5. Le client web doit être une Single Page Application.
-6. Le mini-serveur doit pouvoir recevoir des messages en se synchronisant avec un pairs, une instance du même serveur sur une autre machine.
-7. Les messages doivent être encryptés de manière asymétrique grâce aux clés publiques et privées des utilisateurs.
+1. Envoyer des messages à des contacts en choisissant à quel contact l’envoyer et en entrant manuellement dans une zone de texte le message à envoyer.
+2. Pouvoir accéder à tous les messages reçus par l'utilisateur.
+3. Créer de nouveau contacts en spécifiant son nom et sa clé publique.
+4. Pouvoir modifier le nom et la clé publique d’un contact après avoir créé celui-ci
+5. Pouvoir chercher à travers la banque de contacts enregistrés avec une recherche basé sur du texte (par exemple, si dans la recherche « ma » est entré, les contacts comme Marco et Emma devraient sortir).
+6. Le client web doit être une Single Page Application.
+7. Le mini-serveur doit pouvoir recevoir des messages en se synchronisant avec un pairs, une instance du même serveur sur une autre machine.
+8. Les messages doivent être cryptés de manière asymétrique grâce aux clés publiques et privées des utilisateurs.
 
 ### Présentation des fonctions implémentées
 
